@@ -85,14 +85,16 @@ body {
     transform: translateY(-50%);
 }
 .plan .form_container button {
+    --btn-Shadow: hsla(154, 68%, 46%, 0.674);
     all: unset;
     padding: 1rem;
     background-color: var(--Green);
     font-weight: 600;
     text-transform: uppercase;
     border-radius: var(--border-r-input);
-    box-shadow: 0 5px 0 hsla(154, 68%, 46%, 0.674);
+    box-shadow: 0 5px 0 var(--btn-Shadow);
     cursor: pointer;
+    transition: opacity 0.3s ease;
     &:hover {
         opacity: .8;
     }
@@ -139,9 +141,9 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * {
-    transition: none !important;
-    animation: none !important;
+  .plan .form_container button,
+  .input-error::before {
+    transition: none;
   }
 }
 

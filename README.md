@@ -20,7 +20,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution on Frontend Mentor]()
+- [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/intro-component-with-sign-up-form-using-oop-VdRy8LwbRk)
 - [live site URL](https://alaa-mekibes.github.io/intro-component-with-signup-form-frontend-mentor)
 
 ## My process
@@ -32,3 +32,26 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - JS OOP
+- Regex
+
+### More Info
+
+- I use OOP concept in my project:
+
+```javascript
+class InputVerfication {
+    constructor() {/* .... */}
+
+    displayError(field) {/* .... */}
+    init(field) {/* .... */}
+    verification() {/* .... */}
+}
+```
+
+- I use regex for email verification:
+
+```javascript
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if(!this.userEA.value.trim() || !emailPattern.test(this.userEA.value.trim())) {this.displayError(this.userEA); isValid = false;} else this.init(this.userEA);
+```
