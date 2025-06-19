@@ -54,4 +54,4 @@ class InputVerfication {
 }
 
 // main
-input = new InputVerfication;
+new InputVerfication;
